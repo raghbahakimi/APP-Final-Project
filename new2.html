@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Domine:wght@400..700&display=swap" rel="stylesheet">
+    <title>Cat Breeds</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        header {
+            background-color: #1f6b73;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        h2 {
+            color: #1f6b73;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .cat-breed {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .breed {
+            background-color: #1f6b73;
+            color: white;
+            margin: 10px;
+            padding: 20px;
+            width: 30%;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: scale(1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .breed:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .breed img {
+            width: 100%;
+            border-radius: 8px;
+            transition: opacity 0.3s ease;
+        }
+
+        .breed:hover img {
+            opacity: 0.8;
+        }
+
+        .breed h3 {
+            margin-top: 15px;
+            font-size: 1.4em;
+        }
+
+        .breed p {
+            margin-top: 10px;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+
+        footer {
+            background-color: #1f6b73;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Cat Breeds
+    </header>
+
+    <div class="container">
+        <h2>About Different Cat Breeds</h2>
+        <p>Cats are one of the most popular pets around the world, and they come in various breeds, each with its own unique characteristics. Every breed of cat has distinct physical, personality, and behavioral traits that make them special. Here are some of the most famous cat breeds.</p>
+
+        <div class="cat-breed">
+            <div class="breed">
+                <img src="g.jpg" alt="Siamese Cat">
+                <h3>Siamese Cat</h3>
+                <p>Siamese cats are one of the most popular and well-known breeds. They are known for their distinct color pattern and high intelligence. Siamese cats are very social and energetic, often seeking interaction with their human companions.</p>
+            </div>
+
+            <div class="breed">
+                <img src="h.jpg" alt="Persian Cat">
+                <h3>Persian Cat</h3>
+                <p>Persian cats are known for their long, soft fur. They are quiet and gentle, often preferring calm and serene environments. Persian cats are one of the oldest and most beloved breeds in the cat world.</p>
+            </div>
+
+            <div class="breed">
+                <img src="i.jpg" alt="Bengal Cat">
+                <h3>Bengal Cat</h3>
+                <p>Bengal cats have a unique appearance, resembling small leopards or tigers. These cats are very active and playful, with a strong love for exploration and adventure. They are often very social and adaptable to various environments.</p>
+            </div>
+        </div>
+
+        <div class="cat-breed">
+            <div class="breed">
+                <img src="j.jpg" alt="Maine Coon Cat">
+                <h3>Maine Coon Cat</h3>
+                <p>Maine Coon cats are one of the largest domestic cat breeds. These cats are known for their long, fluffy fur and gentle nature. They are friendly and typically get along well with children and other pets, making them great family companions.</p>
+            </div>
+
+            <div class="breed">
+                <img src="k.jpg" alt="Scottish Fold Cat">
+                <h3>Scottish Fold Cat</h3>
+                <p>Scottish Fold cats are easily recognized by their unique, folded ears. They are gentle, affectionate, and often enjoy spending time with their human companions. Scottish Folds are well-suited for both families and single-person households.</p>
+            </div>
+
+            <div class="breed">
+                <img src="l.jpg" alt="Spanish Cat">
+                <h3>Spanish Cat</h3>
+                <p>The Spanish cat breed is known for its resilience and adaptability. They are energetic, intelligent, and enjoy exploring new environments. These cats are highly independent but also enjoy human companionship.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
